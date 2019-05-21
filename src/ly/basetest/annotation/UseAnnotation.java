@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 /**
  * 使用自定义注解
  */
-public class UserAnnotation {
+public class UseAnnotation {
 
     @MyAnnotation(username = "小红",age = 18)
     public void add(String name,int age){
@@ -15,7 +15,7 @@ public class UserAnnotation {
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         //反射出该类得方法
-        Class<UserAnnotation> userAnnotationClass = UserAnnotation.class;
+        Class<UseAnnotation> userAnnotationClass = UseAnnotation.class;
         Method add = userAnnotationClass.getMethod("add", String.class, int.class);
 
         //通过方法得到注解上的具体信息
@@ -24,7 +24,7 @@ public class UserAnnotation {
         int age = annotation.age();
 
         //调用方法
-        UserAnnotation o = userAnnotationClass.newInstance();
+        UseAnnotation o = userAnnotationClass.newInstance();
         add.invoke(o, username, age);
 
     }
