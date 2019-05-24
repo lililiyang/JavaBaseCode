@@ -1,4 +1,4 @@
-package ly.basetest.DynamicProxy;
+package ly.basetest.proxy.dynamicProxy;
 
 public class LiuDeHua implements Person {
 

@@ -1,4 +1,4 @@
-package ly.basetest.DynamicProxy;
+package ly.basetest.proxy.dynamicProxy;
 
 public class ProxyTest {
     public static void main(String[] args) {
