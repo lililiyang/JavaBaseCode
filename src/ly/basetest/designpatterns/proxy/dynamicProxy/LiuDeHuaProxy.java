@@ -1,4 +1,4 @@
-package ly.basetest.proxy.dynamicProxy;
+package ly.basetest.designpatterns.proxy.dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

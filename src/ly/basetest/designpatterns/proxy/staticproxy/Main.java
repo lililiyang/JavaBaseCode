@@ -1,4 +1,4 @@
-package ly.basetest.proxy.staticproxy;
+package ly.basetest.designpatterns.proxy.staticproxy;
 
 public class Main {
     public static void main(String[] args) {
